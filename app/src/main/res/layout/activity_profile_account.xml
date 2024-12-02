@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".profile_account">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#405160"
+        android:padding="25dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Travelocal"
+            android:textColor="#EFD5D5"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"/>
+
+    </LinearLayout>
+
+    <!-- Subtitle -->
+    <TextView
+        android:id="@+id/tv_subtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PROFILE ACOUNT"
+        android:textSize="18sp"
+        android:textColor="#5B6E7F"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:padding="20dp"
+        android:layout_marginBottom="80dp">
+
+        <!-- Nama -->
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nama"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp" />
+
+        <EditText
+            android:id="@+id/Nama"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Nama"
+            android:padding="10dp"
+            android:layout_marginBottom="5dp"
+            android:inputType="text"/>
+
+        <!-- Email -->
+        <TextView
+            android:id="@+id/tv_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:inputType="textPassword"
+            android:padding="10dp"/>
+
+        <!-- Username -->
+        <TextView
+            android:id="@+id/tv_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Username"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp" />
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Username"
+            android:padding="10dp"
+            android:layout_marginBottom="5dp"
+            android:inputType="text"/>
+
+        <!-- Tanggal Lahir -->
+        <TextView
+            android:id="@+id/tv_birthdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tanggal Lahir"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp" />
+
+
+        <EditText
+            android:id="@+id/tanggal"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="TTL"
+            android:padding="10dp"
+            android:layout_marginBottom="5dp"
+            android:inputType="date"/>
+
+        <!-- Gender -->
+        <TextView
+            android:id="@+id/tv_gender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gender"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp" />
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/combobox"
+            android:spinnerMode="dropdown"/>
+
+    </LinearLayout>
+
+    <!-- Bottom Navigation -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#405160"
+        android:layout_marginTop="30dp">
+
+        <!-- Tombol Beranda -->
+        <Button
+            android:id="@+id/home_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="BERANDA"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#405160"
+            android:drawableTop="@drawable/home"/>
+
+        <!-- Tombol Pemesanan -->
+        <Button
+            android:id="@+id/order_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="PEMESANAN"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#405160"
+            android:drawableTop="@drawable/buku"/>
+
+        <!-- Tombol Akun -->
+        <Button
+            android:id="@+id/account_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="AKUN"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#405160"
+            android:drawableTop="@drawable/profile"/>
+    </LinearLayout>
+</LinearLayout>
+
+
+
+

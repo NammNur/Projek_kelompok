@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".register">
+
+    <EditText
+        android:id="@+id/nama"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Nama Lengkap"
+        android:drawableStart="@drawable/nama"
+        android:padding="10dp"
+        android:layout_marginBottom="5dp"
+        android:inputType="text"/>
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:drawableStart="@drawable/email"
+        android:padding="10dp"/>
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:drawableStart="@drawable/username"
+        android:padding="10dp"
+        android:inputType="text"
+        android:layout_marginBottom="5dp"/>
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:drawableStart="@drawable/password"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:layout_marginBottom="30dp"/>
+
+    <Button
+        android:id="@+id/reg"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:backgroundTint="#5B6E7F"
+        android:text="Register"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/batal"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:text="Batal"
+        android:textColor="#5B6E7F" />
+</LinearLayout>

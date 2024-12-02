@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Projek_kelompok</string>
+    <string-array name="spinner_items">
+        <item>Laki-Laki</item>
+        <item>Perempuan</item>
+    </string-array>
+</resources>

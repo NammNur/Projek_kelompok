@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".Login">
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:drawableStart="@drawable/username"
+        android:padding="10dp"
+        android:layout_marginBottom="5dp"
+        android:inputType="text"/>
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:drawableStart="@drawable/password"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:layout_marginBottom="30dp"/>
+
+    <Button
+        android:id="@+id/BLogin"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:backgroundTint="#5B6E7F"
+        android:text="Login"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/Bregis"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:textColor="#5B6E7F" />
+</LinearLayout>
