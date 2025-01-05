@@ -1,6 +1,8 @@
 package com.example.projek_kelompok;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -20,5 +22,9 @@ public class maskapai_kereta extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+    }
+    public void bokingK(View view) {
+        Intent intent = new Intent(maskapai_kereta.this, pemesanan_tiket_kereta.class);
+        startActivity(intent);
     }
 }

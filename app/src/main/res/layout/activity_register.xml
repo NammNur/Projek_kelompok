@@ -10,7 +10,7 @@
     tools:context=".register">
 
     <EditText
-        android:id="@+id/nama"
+        android:id="@+id/TNama"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:hint="Nama Lengkap"
@@ -20,7 +20,7 @@
         android:inputType="text"/>
 
     <EditText
-        android:id="@+id/email"
+        android:id="@+id/TEmail"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:hint="Email"
@@ -29,7 +29,7 @@
         android:padding="10dp"/>
 
     <EditText
-        android:id="@+id/username"
+        android:id="@+id/TUser"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:hint="Username"
@@ -39,7 +39,17 @@
         android:layout_marginBottom="5dp"/>
 
     <EditText
-        android:id="@+id/password"
+        android:id="@+id/TNoHp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="No Hp"
+        android:drawableStart="@drawable/username"
+        android:padding="10dp"
+        android:inputType="phone"
+        android:layout_marginBottom="5dp"/>
+
+    <EditText
+        android:id="@+id/TPass"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:hint="Password"
@@ -49,7 +59,7 @@
         android:layout_marginBottom="30dp"/>
 
     <Button
-        android:id="@+id/reg"
+        android:id="@+id/Breg"
         android:layout_width="175dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="5dp"
@@ -63,5 +73,6 @@
         android:layout_width="175dp"
         android:layout_height="wrap_content"
         android:text="Batal"
-        android:textColor="#5B6E7F" />
+        android:textColor="#5B6E7F"
+        android:onClick="backtohome"/>
 </LinearLayout>

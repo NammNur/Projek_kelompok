@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:id="@+id/main"
+    tools:context=".data_pemesanan_tiket_pesawat"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#F5F5F5">
@@ -106,6 +107,7 @@
             android:layout_weight="1"
             android:text="BERANDA"
             android:textColor="#FFFFFF"
+            android:onClick="beranda"
             android:backgroundTint="#405160"
             android:drawableTop="@drawable/home"/>
 
@@ -113,6 +115,7 @@
         <Button
             android:id="@+id/order_button"
             android:layout_width="0dp"
+            android:onClick="pemesanan"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="PEMESANAN"
@@ -122,6 +125,7 @@
 
         <!-- Tombol Akun -->
         <Button
+            android:onClick="akun"
             android:id="@+id/account_button"
             android:layout_width="0dp"
             android:layout_height="match_parent"

@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
+    <string-array name="maskapai_Kereta">
+        <item>Garuda Indonesia</item>
+        <item>AirAsia</item>
+        <item>Lion Air</item>
+        <item>Citilink</item>
+        <item>Sriwijaya Air</item>
+    </string-array>
 </resources>

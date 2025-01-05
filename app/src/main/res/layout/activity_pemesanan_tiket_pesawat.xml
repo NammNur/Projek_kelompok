@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#F5F5F5"
+    android:id="@+id/main"
+    tools:context=".pemesanan_tiket_pesawat"
     android:padding="0dp">
 
     <LinearLayout
@@ -55,7 +57,7 @@
                 android:text="kota awal"
                 android:textColor="#405160" />
             <EditText
-                android:id="@+id/kota_awal"
+                android:id="@+id/kota_asal"
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:hint="Masukkan Kota Awal"
@@ -68,7 +70,7 @@
                 android:text="kota tujuan"
                 android:textColor="#405160" />
             <EditText
-                android:id="@+id/kota_tujuan"
+                android:id="@+id/kota_akhir"
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:hint="Masukkan Kota Tujuan"
@@ -158,6 +160,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Booking"
+                android:onClick="BookingP"
                 android:backgroundTint="#405160"
                 android:textColor="#FFFFFF"
                 android:layout_marginTop="16dp" />
@@ -180,12 +183,14 @@
             android:text="BERANDA"
             android:textColor="#FFFFFF"
             android:backgroundTint="#405160"
+            android:onClick="beranda"
             android:drawableTop="@drawable/home"/>
 
         <!-- Tombol Pemesanan -->
         <Button
             android:id="@+id/order_button"
-            android:layout_width="1dp"
+            android:layout_width="0dp"
+            android:onClick="pemesanan"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="PEMESANAN"
@@ -196,11 +201,11 @@
         <!-- Tombol Akun -->
         <Button
             android:id="@+id/account_button"
-            android:layout_width="1dp"
+            android:layout_width="0dp"
+            android:onClick="akun"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="AKUN"
-            android:gravity="center"
             android:textColor="#FFFFFF"
             android:backgroundTint="#405160"
             android:drawableTop="@drawable/profile"/>

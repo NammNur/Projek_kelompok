@@ -17,10 +17,10 @@
             android:exported="true" />
         <activity
             android:name=".maskapai_kereta"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".maskapai_pesawat"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".history"
             android:exported="true" />

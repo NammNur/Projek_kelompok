@@ -40,7 +40,8 @@
                 android:text="Qualia Bizar Azizah"
                 android:textColor="#FFFFFF"
                 android:textSize="16sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:onClick="akun"/>
 
             <!--keterangan saldo-->
             <LinearLayout
@@ -74,6 +75,7 @@
             android:layout_height="wrap_content"
             android:text="Logout"
             android:backgroundTint="#FFFFFF"
+            android:onClick="logut"
             android:textColor="#4A6C81" />
     </LinearLayout>
 
@@ -96,7 +98,7 @@
             android:textSize="25dp"
             android:textStyle="bold"
             android:layout_gravity="center"
-            android:layout_marginTop="20dp"/>
+            android:layout_marginTop="10dp"/>
 
         <!-- Menu Tombol -->
         <LinearLayout
@@ -117,7 +119,8 @@
                 android:orientation="vertical"
                 android:padding="15dp"
                 android:background="@drawable/bg"
-                android:layout_margin="15dp">
+                android:layout_margin="15dp"
+                android:onClick="maskapaiP">
 
                 <ImageView
                     android:layout_width="wrap_content"
@@ -142,7 +145,8 @@
                 android:background="@drawable/bg"
                 android:gravity="center_horizontal"
                 android:orientation="vertical"
-                android:padding="10dp">
+                android:padding="10dp"
+                android:onClick="maskapaiK">
 
                 <ImageView
                     android:layout_width="64dp"
@@ -177,7 +181,8 @@
                 android:background="@drawable/bg"
                 android:padding="15dp"
                 android:layout_marginTop="15dp"
-                android:layout_marginStart="35dp">
+                android:layout_marginStart="35dp"
+                android:onClick="histori">
 
                 <ImageView
                     android:layout_width="64dp"
@@ -202,7 +207,8 @@
                 android:padding="15dp"
                 android:background="@drawable/bg"
                 android:layout_marginStart="105dp"
-                android:layout_marginTop="15dp">
+                android:layout_marginTop="15dp"
+                android:onClick="jadwal">
 
                 <ImageView
                     android:layout_width="64dp"
@@ -270,7 +276,8 @@
             android:text="BERANDA"
             android:textColor="#FFFFFF"
             android:backgroundTint="#405160"
-            android:drawableTop="@drawable/home"/>
+            android:drawableTop="@drawable/home"
+            android:onClick="beranda"/>
 
         <!-- Tombol Pemesanan -->
         <Button
@@ -281,6 +288,7 @@
             android:text="PEMESANAN"
             android:textColor="#FFFFFF"
             android:backgroundTint="#405160"
+            android:onClick="pemesanan"
             android:drawableTop="@drawable/buku"/>
 
         <!-- Tombol Akun -->
@@ -293,6 +301,7 @@
             android:gravity="center"
             android:textColor="#FFFFFF"
             android:backgroundTint="#405160"
+            android:onClick="akun"
             android:drawableTop="@drawable/profile"/>
     </LinearLayout>
 

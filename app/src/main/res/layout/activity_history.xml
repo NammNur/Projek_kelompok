@@ -173,6 +173,7 @@
             android:text="BERANDA"
             android:textColor="#FFFFFF"
             android:backgroundTint="#405160"
+            android:onClick="beranda"
             android:drawableTop="@drawable/home"/>
 
         <!-- Tombol Pemesanan -->
@@ -184,6 +185,7 @@
             android:text="PEMESANAN"
             android:textColor="#FFFFFF"
             android:backgroundTint="#405160"
+            android:onClick="pemesanan"
             android:drawableTop="@drawable/buku"/>
 
         <!-- Tombol Akun -->
@@ -192,6 +194,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:onClick="akun"
             android:text="AKUN"
             android:textColor="#FFFFFF"
             android:backgroundTint="#405160"

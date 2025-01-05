@@ -44,5 +44,6 @@
         android:layout_width="175dp"
         android:layout_height="wrap_content"
         android:text="Register"
-        android:textColor="#5B6E7F" />
+        android:textColor="#5B6E7F"
+        android:onClick="openregister"/>
 </LinearLayout>

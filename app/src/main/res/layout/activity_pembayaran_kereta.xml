@@ -201,6 +201,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:backgroundTint="#FFFFFF"
+                android:onClick="data_pemesanan"
                 android:text="BAYAR"
                 android:textStyle="bold"
                 android:textColor="#405160"/>
@@ -211,8 +212,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:background="#405160"
-        android:layout_marginTop="30dp">
+        android:background="#405160">
 
         <!-- Tombol Beranda -->
         <Button
@@ -223,12 +223,14 @@
             android:text="BERANDA"
             android:textColor="#FFFFFF"
             android:backgroundTint="#405160"
+            android:onClick="beranda"
             android:drawableTop="@drawable/home"/>
 
         <!-- Tombol Pemesanan -->
         <Button
             android:id="@+id/order_button"
-            android:layout_width="1dp"
+            android:layout_width="0dp"
+            android:onClick="pemesanan"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="PEMESANAN"
@@ -239,11 +241,11 @@
         <!-- Tombol Akun -->
         <Button
             android:id="@+id/account_button"
-            android:layout_width="1dp"
+            android:layout_width="0dp"
+            android:onClick="akun"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="AKUN"
-            android:gravity="center"
             android:textColor="#FFFFFF"
             android:backgroundTint="#405160"
             android:drawableTop="@drawable/profile"/>
