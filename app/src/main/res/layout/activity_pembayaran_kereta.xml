@@ -1,32 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F5F5F5"
-    android:padding="0dp">
+    android:orientation="vertical"
+    tools:context=".pembayaran_kereta">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:orientation="vertical"
         android:background="#405160"
-        android:gravity="center"
-        android:paddingVertical="16dp">
+        android:padding="25dp"
+        android:gravity="center">
 
         <TextView
+            android:id="@+id/title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Travelocal"
-            android:textColor="#FFFFFF"
-            android:textSize="20sp"
-            android:textStyle="bold" />
+            android:textColor="#EFD5D5"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"/>
+
     </LinearLayout>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Pemesanan Tiket Pesawat"
+        android:text="Pembayaran"
         android:textColor="#405160"
         android:textSize="18sp"
         android:gravity="center"
@@ -44,7 +50,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:background="@drawable/garis_luar"
+            android:background="@drawable/bg"
             android:padding="16dp"
             android:layout_marginHorizontal="16dp"
             android:layout_marginBottom="8dp">
@@ -52,64 +58,98 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="kota awal"
-                android:textColor="#405160" />
-            <EditText
-                android:id="@+id/kota_awal"
-                android:layout_width="300dp"
-                android:layout_height="wrap_content"
-                android:hint="Masukkan Kota Awal"
-                android:padding="10dp"
-                android:layout_marginBottom="5dp"
-                android:inputType="text" />
+                android:text="Tiket Kereta"
+                android:textColor="#FFFFFF"
+                android:textSize="18dp"
+                android:textStyle="bold"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="kota tujuan"
-                android:textColor="#405160" />
-            <EditText
-                android:id="@+id/kota_tujuan"
-                android:layout_width="300dp"
-                android:layout_height="wrap_content"
-                android:hint="Masukkan Kota Tujuan"
-                android:padding="10dp"
-                android:layout_marginBottom="5dp"
-                android:inputType="text" />
+                android:text="Jakarta-Cirebon"
+                android:textColor="#FFFFFF" />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Tanggal Pemberangkatan"
-                android:textColor="#405160" />
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginBottom="16dp">
-                <EditText
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:hint="Tanggal"
-                    android:padding="12dp"
-                    android:layout_marginEnd="4dp"
-                    android:inputType="date" />
+                android:text="12:00-14:40"
+                android:textColor="#FFFFFF" />
 
-                <EditText
-                    android:layout_width="0dp"
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Qualia Bizarr Azizah"
+                android:textColor="#FFFFFF"
+                android:layout_marginBottom="10dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:hint="Waktu"
-                    android:padding="12dp"
-                    android:layout_marginEnd="4dp"
-                    android:inputType="time" />
+                    android:orientation="horizontal"
+                    android:background="#FFFFFF"
+                    android:padding="15dp"
+                    android:layout_margin="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Economy"
+                        android:textStyle="bold"
+                        android:paddingEnd="35dp"
+                        android:textSize="15dp"
+                        android:textColor="#5B6E7F"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="#FFFFFF"
+                    android:padding="15dp"
+                    android:layout_margin="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rp. 300.000,00.-"
+                        android:textStyle="bold"
+                        android:textSize="15dp"
+                        android:textColor="#5B6E7F"/>
+
+                </LinearLayout>
+
             </LinearLayout>
 
             <TextView
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Total"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:layout_marginStart="84dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Kelas"
-                android:textColor="#405160"
-                android:layout_marginBottom="8dp" />
+                android:orientation="horizontal"
+                android:background="#FFFFFF"
+                android:padding="15dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rp. 100.000,00.-"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:textColor="#5B6E7F"/>
+
+            </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -125,12 +165,13 @@
                     <RadioButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Economy"
+                        android:text="BRI"
                         android:layout_weight="1" />
 
                     <RadioButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginStart="28dp"
                         android:text="Business"
                         android:layout_weight="1" />
                 </LinearLayout>
@@ -138,7 +179,8 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:paddingBottom="10dp">
 
                     <RadioButton
                         android:layout_width="wrap_content"
@@ -153,23 +195,24 @@
                         android:layout_weight="1" />
                 </LinearLayout>
             </LinearLayout>
-
             <Button
-                android:layout_width="match_parent"
+                android:id="@+id/bayarK"
+                android:layout_width="250dp"
                 android:layout_height="wrap_content"
-                android:text="Booking"
-                android:backgroundTint="#405160"
-                android:textColor="#FFFFFF"
-                android:layout_marginTop="16dp" />
+                android:layout_gravity="center"
+                android:backgroundTint="#FFFFFF"
+                android:text="BAYAR"
+                android:textStyle="bold"
+                android:textColor="#405160"/>
         </LinearLayout>
     </ScrollView>
 
-    <!-- Bagian Footer -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:background="#405160">
+        android:background="#405160"
+        android:layout_marginTop="30dp">
 
         <!-- Tombol Beranda -->
         <Button
@@ -205,4 +248,5 @@
             android:backgroundTint="#405160"
             android:drawableTop="@drawable/profile"/>
     </LinearLayout>
+
 </LinearLayout>

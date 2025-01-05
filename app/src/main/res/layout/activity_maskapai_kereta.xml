@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".maskapai_kereta">
+
+    <!-- Bagian Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#405160"
+        android:padding="16dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Travelocal"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- Konten Utama -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="16dp">
+
+            <!-- Judul -->
+            <TextView
+                android:id="@+id/subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Maskapai Kereta"
+                android:textSize="16sp"
+                android:textColor="#4A4A4A"
+                android:textStyle="bold"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Tabel Nama Maskapai -->
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="*"
+                android:background="#FFFFFF"
+                android:padding="8dp"
+                android:layout_marginBottom="16dp"
+                android:elevation="2dp">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nama Maskapai"
+                        android:padding="8dp"
+                        android:gravity="center"
+                        android:background="#EEEEEE"
+                        android:textStyle="bold"
+                        android:textColor="#000000" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Garuda Indonesia"
+                        android:padding="8dp"
+                        android:gravity="center"
+                        android:background="#FFFFFF"
+                        android:textColor="#000000" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Indonesia Air Asia"
+                        android:padding="8dp"
+                        android:gravity="center"
+                        android:background="#FFFFFF"
+                        android:textColor="#000000" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Lion Air"
+                        android:padding="8dp"
+                        android:gravity="center"
+                        android:background="#FFFFFF"
+                        android:textColor="#000000" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nam Air"
+                        android:padding="8dp"
+                        android:gravity="center"
+                        android:background="#FFFFFF"
+                        android:textColor="#000000" />
+                </TableRow>
+
+            </TableLayout>
+
+
+            <!-- Dropdown Pilih Maskapai -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#FFFFFF"
+                android:padding="16dp"
+                android:elevation="2dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pilih maskapai"
+                    android:textSize="14sp"
+                    android:textColor="#4A4A4A"
+                    android:layout_marginBottom="8dp" />
+
+                <Spinner
+                    android:id="@+id/spinner_maskapai"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#EEEEEE"
+                    android:padding="8dp" />
+
+                <!-- Tombol Booking -->
+                <Button
+                    android:id="@+id/button_booking"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Booking"
+                    android:backgroundTint="#4A6C81"
+                    android:textColor="#FFFFFF"
+                    android:layout_gravity="center"
+                    android:paddingHorizontal="32dp"
+                    android:paddingVertical="12dp"
+                    android:layout_marginTop="16dp"
+                    android:elevation="2dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Bagian Footer -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#405160">
+
+        <Button
+            android:id="@+id/home_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="BERANDA"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#405160"
+            android:drawableTop="@drawable/home" />
+
+        <Button
+            android:id="@+id/order_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="PEMESANAN"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#405160"
+            android:drawableTop="@drawable/buku" />
+
+        <Button
+            android:id="@+id/account_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="AKUN"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#405160"
+            android:drawableTop="@drawable/profile" />
+    </LinearLayout>
+</LinearLayout>

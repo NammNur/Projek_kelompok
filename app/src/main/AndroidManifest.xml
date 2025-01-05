@@ -13,23 +13,41 @@
         android:theme="@style/Theme.Projek_kelompok"
         tools:targetApi="31">
         <activity
-            android:name=".data_pemesanan_tiket_kereta"
+            android:name=".jadwal"
+            android:exported="true" />
+        <activity
+            android:name=".maskapai_kereta"
             android:exported="false" />
+        <activity
+            android:name=".maskapai_pesawat"
+            android:exported="false" />
+        <activity
+            android:name=".history"
+            android:exported="true" />
+        <activity
+            android:name=".pembayaran_kereta"
+            android:exported="true" />
+        <activity
+            android:name=".pembayaran_pesawat"
+            android:exported="true" />
+        <activity
+            android:name=".data_pemesanan_tiket_kereta"
+            android:exported="true" />
         <activity
             android:name=".data_booking_tiket_kereta"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".pemesanan_tiket_kereta"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".data_pemesanan_tiket_pesawat"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".data_booking_tiket_pesawat"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".pemesanan_tiket_pesawat"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".profile_account"
             android:exported="true" />

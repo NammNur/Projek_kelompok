@@ -47,8 +47,9 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:layout_gravity="center"
+        android:background="@drawable/garis_luar"
         android:padding="20dp"
-        android:layout_marginBottom="80dp">
+        android:layout_marginBottom="37dp">
 
         <!-- Nama -->
         <TextView
@@ -64,7 +65,7 @@
             android:id="@+id/Nama"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:hint="Nama"
+            android:hint=""
             android:padding="10dp"
             android:layout_marginBottom="5dp"
             android:inputType="text"/>
@@ -83,7 +84,7 @@
             android:id="@+id/email"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:hint="Email"
+            android:hint=""
             android:inputType="textPassword"
             android:padding="10dp"/>
 
@@ -101,7 +102,7 @@
             android:id="@+id/username"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:hint="Username"
+            android:hint=""
             android:padding="10dp"
             android:layout_marginBottom="5dp"
             android:inputType="text"/>
@@ -116,15 +117,32 @@
             android:textStyle="bold"
             android:layout_marginBottom="4dp" />
 
-
         <EditText
             android:id="@+id/tanggal"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:hint="TTL"
+            android:hint=""
             android:padding="10dp"
             android:layout_marginBottom="5dp"
             android:inputType="date"/>
+
+        <TextView
+            android:id="@+id/hp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NO-HP"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp" />
+
+        <EditText
+            android:id="@+id/NoHp"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint=""
+            android:padding="10dp"
+            android:layout_marginBottom="5dp"
+            android:inputType="number"/>
 
         <!-- Gender -->
         <TextView
@@ -139,7 +157,7 @@
         <Spinner
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/combobox"
+            android:id="@+id/gender"
             android:spinnerMode="dropdown"/>
 
     </LinearLayout>
@@ -149,8 +167,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:background="#405160"
-        android:layout_marginTop="30dp">
+        android:background="#405160">
 
         <!-- Tombol Beranda -->
         <Button
@@ -187,7 +204,3 @@
             android:drawableTop="@drawable/profile"/>
     </LinearLayout>
 </LinearLayout>
-
-
-
-
