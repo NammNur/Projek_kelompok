@@ -43,7 +43,7 @@
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:hint="No Hp"
-        android:drawableStart="@drawable/username"
+        android:drawableStart="@drawable/phone"
         android:padding="10dp"
         android:inputType="phone"
         android:layout_marginBottom="5dp"/>

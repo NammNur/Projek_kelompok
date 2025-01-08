@@ -27,4 +27,16 @@ public class pembayaran_pesawat extends AppCompatActivity {
         Intent intent = new Intent(pembayaran_pesawat.this, data_pemesanan_tiket_pesawat.class);
         startActivity(intent);
     }
+    public void beranda(View view) {
+        Intent intent = new Intent(pembayaran_pesawat.this, dasboard.class);
+        startActivity(intent);
+    }
+    public void akun(View view) {
+        Intent intent = new Intent(pembayaran_pesawat.this, profile_account.class);
+        startActivity(intent);
+    }
+    public void pemesanan(View view) {
+        Intent intent = new Intent(pembayaran_pesawat.this, data_pemesanan_tiket_kereta.class);
+        startActivity(intent);
+    }
 }

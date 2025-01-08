@@ -85,7 +85,7 @@
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:hint=""
-            android:inputType="textPassword"
+            android:inputType="textEmailAddress"
             android:padding="10dp"/>
 
         <!-- Username -->
@@ -170,7 +170,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:background="#405160">
+        android:background="#405160"
+        android:layout_marginTop="135dp">
 
         <!-- Tombol Beranda -->
         <Button

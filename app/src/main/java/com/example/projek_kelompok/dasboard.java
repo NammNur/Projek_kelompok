@@ -55,4 +55,8 @@ public class dasboard extends AppCompatActivity {
         Intent intent = new Intent(dasboard.this, data_pemesanan_tiket_kereta.class);
         startActivity(intent);
     }
+    public void aboutus(View view) {
+        Intent intent = new Intent(dasboard.this, AboutUs.class);
+        startActivity(intent);
+    }
 }
